@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>iSlider with plugins dot and button</title>
+    <script src="./libs/jquery.js"></script>
+    <script src="./mg.dev.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./main.css">
+ 
+</head>
+
+
+
+<body>
+    <div id="container">
+        <div id="list" m-html="a">
+            <div  m-html="a">
+
+            </div>
+            <input type="text" m-model="c.m">
+            <h2 m-class="{active:e,hasbg:f}">this is h2h2h2h2  ...{{a}}...{{b}}...{{c.m}}</h2>
+
+            <!--<button m-click="_alert(arr[0][1],c.m,10)">按钮</button>-->
+            <input type="text" m-input="_alert(c.m)" m-model='c.m'>
+        </div>
+        
+    </div>
+    <button id="btn">add</button>
+
+    
+</body>
+</html>
